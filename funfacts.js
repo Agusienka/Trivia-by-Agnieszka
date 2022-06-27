@@ -152,7 +152,8 @@ op4.value = Questions[id].a[3].isCorrect;
 
 var selected = "";
 
-// Show selection for op1
+// don't forget the counter for wind and loses
+// Show selection for op1       !!!ADD A FLIP CARD to the question div with right or wrong msg?
 op1.addEventListener("click", () => {
     op1.style.backgroundColor = "lightgoldenrodyellow";
     op2.style.backgroundColor = "lightskyblue";
@@ -224,7 +225,73 @@ if (id < 9) {
 
 })
 
+var readySetGo = {};
+readySetGo.opacityIn = [0,1];
+readySetGo.scaleIn = [0.2, 1];
+readySetGo.scaleOut = 3;
+readySetGo.durationIn = 800;
+readySetGo.durationOut = 600;
+readySetGo.delay = 500;
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.readySetGo .letters-1',
+    opacity: readySetGo.opacityIn,
+    scale: readySetGo.scaleIn,
+    duration: readySetGo.durationIn,
+    
+  }).add({
+    targets: '.readySetGo .letters-1',
+    opacity: 0,
+    scale: readySetGo.scaleOut,
+    duration: readySetGo.durationOut,
+    easing: "easeInExpo",
+    delay: readySetGo.delay,
+    
+  }).add({
+    targets: '.readySetGo .letters-2',
+    opacity: readySetGo.opacityIn,
+    scale: readySetGo.scaleIn,
+    duration: readySetGo.durationIn,
+    
+  }).add({
+    targets: '.readySetGo .letters-2',
+    opacity: 0,
+    scale: readySetGo.scaleOut,
+    duration: readySetGo.durationOut,
+    easing: "easeInExpo",
+    delay: readySetGo.delay,
+    
+  }).add({
+    targets: '.readySetGo .letters-3',
+    opacity: readySetGo.opacityIn,
+    scale: readySetGo.scaleIn,
+    duration: readySetGo.durationIn,
+    
+  }).add({
+    targets: '.readySetGo .letters-3',
+    opacity: 0,
+    scale: readySetGo.scaleOut,
+    duration: readySetGo.durationOut,
+    easing: "easeInExpo",
+    delay: readySetGo.delay,
+    
+  }).add({
+    targets: '.readySetGo',
+    opacity: 0,
+    duration: 500,
+    delay: 500,
+  });
+    
+    
+    
+    
+    
+    
+    
+    
+
+ 
 
 // add fun category names to each html
 // add sound effects for correct and wrong
