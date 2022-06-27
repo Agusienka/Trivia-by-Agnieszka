@@ -39,6 +39,77 @@ const Questions = [{
         { text: "Miles per second", isCorrect: false }
     ]
 
+},
+
+{
+    id: 4,
+    q: "The computer mouse speed is measured in what?",
+    a: [{ text: "Millimeters per second", isCorrect: false, },
+        { text: "Mickeys", isCorrect: true },
+        { text: "Feet per second", isCorrect: false },
+        { text: "Miles per second", isCorrect: false }
+    ]
+
+},
+{
+    id: 5,
+    q: "In the state of Georgia, it is illegal to eat what with a fork?",
+    a: [{ text: "Pizza", isCorrect: false, },
+        { text: "Fried chicken", isCorrect: true },
+        { text: "Whoopie Pie", isCorrect: false },
+        { text: "Corn on the Cob", isCorrect: false }
+    ]
+
+},
+{
+    id: 6,
+    q: "In public places in the state of Florida, what's illegal to do when wearing a swimsuit?",
+    a: [{ text: "Drink alcohol", isCorrect: false, },
+        { text: "Drive a car", isCorrect: false },
+        { text: "Mow the lawn", isCorrect: false },
+        { text: "Sing", isCorrect: true }
+    ]
+
+},
+{
+    id: 7,
+    q: "Which saying should every programming developer know that helps improve their skills? ",
+    a: [{ text: "ASAP", isCorrect: false, },
+        { text: "Help Vampires", isCorrect: false },
+        { text: "RTFM", isCorrect: true },
+        { text: "Compassionate Alternatives to the above", isCorrect: false }
+    ]
+
+},
+{
+    id: 8,
+    q: "Which country do kiwifruit originate",
+    a: [{ text: "Australia", isCorrect: false, },
+        { text: "China", isCorrect: true },
+        { text: "New Zealand", isCorrect: false },
+        { text: "Japan", isCorrect: false }
+    ]
+
+},
+{
+    id: 9,
+    q: "In which country are Panama hats made?",
+    a: [{ text: "Panama", isCorrect: false, },
+        { text: "Brazil", isCorrect: false },
+        { text: "Guatemala", isCorrect: false },
+        { text: "Ecuador", isisCorrect: true }
+    ]
+
+},
+{
+    id: 10,
+    q: "From which country do French fries originate?",
+    a: [{ text: "Belgium", isCorrect: true, },
+        { text: "US", isCorrect: false },
+        { text: "France", isCorrect: false },
+        { text: "Germany", isCorrect: false }
+    ]
+
 }
 
 ]
@@ -145,7 +216,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 3) {
+if (id < 9) {
     id++;
     iterate(id);
     console.log(id);

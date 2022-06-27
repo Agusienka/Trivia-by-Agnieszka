@@ -1,31 +1,113 @@
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "What is capital of India?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
-        { text: "mumbai", isCorrect: false }
+    q: "",
+    a: [{ text: "", isCorrect: false },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: true }
     ]
 
 },
 {
     id: 1,
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-        { text: "phuket", isCorrect: false },
-        { text: "Ayutthaya", isCorrect: false },
-        { text: "Bangkok", isCorrect: true }
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: true }
     ]
 
 },
 {
     id: 2,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: true },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false }
+    ]
+
+},
+
+{
+    id: 3,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: true },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false }
+    ]
+
+},
+
+{
+    id: 4,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: true },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false }
+    ]
+
+},
+{
+    id: 5,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: true },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false }
+    ]
+
+},
+{
+    id: 6,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: true }
+    ]
+
+},
+{
+    id: 7,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: true },
+        { text: "", isCorrect: false }
+    ]
+
+},
+{
+    id: 8,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: true },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false }
+    ]
+
+},
+{
+    id: 9,
+    q: "",
+    a: [{ text: "", isCorrect: false, },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false },
+        { text: "", isisCorrect: true }
+    ]
+
+},
+{
+    id: 10,
+    q: "",
+    a: [{ text: "", isCorrect: true, },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false },
+        { text: "", isCorrect: false }
     ]
 
 }
@@ -134,7 +216,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 2) {
+if (id < 9) {
     id++;
     iterate(id);
     console.log(id);
