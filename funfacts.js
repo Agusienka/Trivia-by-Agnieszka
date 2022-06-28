@@ -97,7 +97,7 @@ const Questions = [{
     a: [{ text: "Panama", isCorrect: false, },
         { text: "Brazil", isCorrect: false },
         { text: "Guatemala", isCorrect: false },
-        { text: "Ecuador", isisCorrect: true }
+        { text: "Ecuador", isCorrect: true }
     ]
 
 },
@@ -217,7 +217,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 9) {
+if (id < 10) {
     id++;
     iterate(id);
     console.log(id);
@@ -233,12 +233,13 @@ readySetGo.durationIn = 800;
 readySetGo.durationOut = 600;
 readySetGo.delay = 500;
 
-anime.timeline({loop: true})
+   anime.timeline({})
   .add({
     targets: '.readySetGo .letters-1',
     opacity: readySetGo.opacityIn,
     scale: readySetGo.scaleIn,
     duration: readySetGo.durationIn,
+    autoplay: false,
     
   }).add({
     targets: '.readySetGo .letters-1',
@@ -247,6 +248,7 @@ anime.timeline({loop: true})
     duration: readySetGo.durationOut,
     easing: "easeInExpo",
     delay: readySetGo.delay,
+    autoplay: false,
     
   }).add({
     targets: '.readySetGo .letters-2',
@@ -261,12 +263,14 @@ anime.timeline({loop: true})
     duration: readySetGo.durationOut,
     easing: "easeInExpo",
     delay: readySetGo.delay,
+    autoplay: false,
     
   }).add({
     targets: '.readySetGo .letters-3',
     opacity: readySetGo.opacityIn,
     scale: readySetGo.scaleIn,
     duration: readySetGo.durationIn,
+    autoplay: false,
     
   }).add({
     targets: '.readySetGo .letters-3',
@@ -275,14 +279,30 @@ anime.timeline({loop: true})
     duration: readySetGo.durationOut,
     easing: "easeInExpo",
     delay: readySetGo.delay,
+    autoplay: false,
     
   }).add({
     targets: '.readySetGo',
     opacity: 0,
     duration: 500,
     delay: 500,
+    autoplay: false,
+  })
+    
+  var animation = anime({
+    targets: '.play-pause-demo .el',
+    translateX: 270,
+    delay: function(el, i) { return i * 100; },
+    direction: 'alternate',
+    loop: false,
+    autoplay: false,
+    easing: 'easeInOutSine'
   });
-    
+  
+  document.querySelector('.play-pause-demo .play').onclick = animation.play;
+  document.querySelector('.play-pause-demo .pause').onclick = animation.pause;
+
+
     
     
     
@@ -291,8 +311,8 @@ anime.timeline({loop: true})
     
     
 
- 
-
+//try to make it look like an app 
+//do Polish version
 // add fun category names to each html
 // add sound effects for correct and wrong
 // maybe music?
