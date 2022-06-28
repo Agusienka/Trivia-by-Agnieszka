@@ -1,113 +1,113 @@
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
+    q: "How many critically endangered Sumatran orangutans are there left in the wild?",
+    a: [{ text: "Fewer than 50,000", isCorrect: false },
+        { text: "Fewer than 45,000", isCorrect: false },
+        { text: "Fewer than 20,000", isCorrect: false },
+        { text: "Fewer than 14,000", isCorrect: true }
     ]
 
 },
 {
     id: 1,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
+    q: "What is the main threat to the western lowland gorilla?",
+    a: [{ text: "Illegal poaching for bush meat", isCorrect: true, },
+        { text: "Habitat loss", isCorrect: false },
+        { text: "Being killed for medicinal purposes", isCorrect: false },
+        { text: "Climate change", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "What is the largest land predator species?",
+    a: [{ text: "Lion", isCorrect: false, },
+        { text: "Grizzly bear", isCorrect: false},
+        { text: "Polar bear", isCorrect: true },
+        { text: "Alligator", isCorrect: false }
     ]
 
 },
 
 {
     id: 3,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "In which continent would you find the Mount Kilimanjaro?",
+    a: [{ text: "Asia", isCorrect: false, },
+        { text: "Africa", isCorrect: true },
+        { text: "Europe", isCorrect: false },
+        { text: "Antarctica", isCorrect: false }
     ]
 
 },
 
 {
     id: 4,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "What is the fifth planet from the sun?",
+    a: [{ text: "Mars", isCorrect: false, },
+        { text: "Earth", isCorrect: false},
+        { text: "Jupiter", isCorrect: true },
+        { text: "Venus", isCorrect: false }
     ]
 
 },
 {
     id: 5,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "The word atom is from a Greek word meaning?",
+    a: [{ text: "Small", isCorrect: false, },
+        { text: "Indivisible", isCorrect: true },
+        { text: "Unseen", isCorrect: false },
+        { text: "Visible", isCorrect: false }
     ]
 
 },
 {
     id: 6,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
+    q: "What creatures travel in gaggles?",
+    a: [{ text: "Eagles", isCorrect: false, },
+        { text: "Prairie dogs", isCorrect: false },
+        { text: "Cows", isCorrect: false },
+        { text: "Geese", isCorrect: true }
     ]
 
 },
 {
     id: 7,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false }
+    q: "What creature do the Galapagos Islands take their name from?",
+    a: [{ text: "Bearded dragon", isCorrect: false, },
+        { text: "Seagull", isCorrect: false },
+        { text: "Tortoise", isCorrect: true },
+        { text: "Mountain Quail", isCorrect: false }
     ]
 
 },
 {
     id: 8,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "Atolls are most probably formed by?",
+    a: [{ text: "A rise in the earth's crust", isCorrect: false, },
+        { text: "Sand brought in from the mainland", isCorrect: false },
+        { text: "Collapse of the center of a volcano", isCorrect: false },
+        { text: "Coral reef upbuilding during subsidence", isCorrect: true }
     ]
 
 },
 {
     id: 9,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isisCorrect: true }
+    q: "Plants get their nitrogen from?",
+    a: [{ text: "Rain", isCorrect: false, },
+        { text: "The soil", isCorrect: true },
+        { text: "The air", isCorrect: false },
+        { text: "The bedrock", isCorrect: false }
     ]
 
 },
 {
     id: 10,
-    q: "",
-    a: [{ text: "", isCorrect: true, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "The first animal launched into orbit was a?",
+    a: [{ text: "Dog", isCorrect: true, },
+        { text: "Monkey", isCorrect: false },
+        { text: "Chimpanzee", isCorrect: false },
+        { text: "Mouse", isCorrect: false }
     ]
 
 }
@@ -216,7 +216,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 9) {
+if (id < 10) {
     id++;
     iterate(id);
     console.log(id);

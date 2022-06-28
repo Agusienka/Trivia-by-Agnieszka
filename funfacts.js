@@ -286,7 +286,7 @@ readySetGo.delay = 500;
     opacity: 0,
     duration: 500,
     delay: 500,
-    autoplay: false,
+  
   })
     
   var animation = anime({
