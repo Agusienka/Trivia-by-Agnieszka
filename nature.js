@@ -1,3 +1,14 @@
+
+document.getElementById("name").onclick = function(){
+    const name = prompt("Enter your name");
+    document.getElementById("outputName").innerText = name;
+}
+
+
+
+
+
+
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -6,7 +17,7 @@ const Questions = [{
         { text: "Fewer than 45,000", isCorrect: false },
         { text: "Fewer than 20,000", isCorrect: false },
         { text: "Fewer than 14,000", isCorrect: true }
-    ]
+    ] 
 
 },
 {
@@ -223,6 +234,11 @@ if (id < 10) {
 }
 
 })
+
+
+
+
+
 
 
 

@@ -1,3 +1,14 @@
+document.getElementById("name").onclick = function(){
+    const name = prompt("Enter your name");
+    document.getElementById("outputName").innerText = name;
+}
+
+
+
+
+
+
+
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -289,7 +300,7 @@ readySetGo.delay = 500;
   
   })
     
-  var animation = anime({
+    var animation = anime({
     targets: '.play-pause-demo .el',
     translateX: 270,
     delay: function(el, i) { return i * 100; },
@@ -299,8 +310,18 @@ readySetGo.delay = 500;
     easing: 'easeInOutSine'
   });
   
-  document.querySelector('.play-pause-demo .play').onclick = animation.play;
-  document.querySelector('.play-pause-demo .pause').onclick = animation.pause;
+  document.querySelector('.play-pause-demo .play').readySetGo.onclick = animation.play;
+  document.querySelector('.play-pause-demo .pause').readySetGo.onclick = animation.pause;
+
+
+
+
+
+
+
+
+
+
 
 
     

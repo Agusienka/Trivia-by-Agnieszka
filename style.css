@@ -86,6 +86,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .question-container{
     margin: 10px;
@@ -174,4 +175,91 @@ body {
   .text-responsive {
     font-size: calc(500% + 1vw + 1vh);
   }
+  
+  .user {
+    color: red;
+  }
+  
+  #name {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  }
+  #name {
+    outline: 0;
+  }
+  #name {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10%;
+   
+   
+    z-index: -100;
+  }
+  
+  
+
+
+  
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+  
   
