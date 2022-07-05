@@ -51,7 +51,7 @@ body {
     margin:0
 }
 .flexnav,.menu-button{font-family:Lato,Helvetica,sans-serif;line-height:1;background:#2b2f3a}
-.flexnav{padding:0;display:block;overflow:visible;width:100%}
+.flexnav{padding:0;display:block;overflow:hidden;width:100%}
 .flexnav>li>a,.menu-button{padding:18px 22px;font-size:18px;text-transform:uppercase}
 .flexnav:after{content:"";display:table;clear:both}
 .menu-button{display:none;color:#7a8189;cursor:pointer}
@@ -59,7 +59,8 @@ body {
 .flexnav li a{color:#7a8189;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-ms-transition:color .2s ease-out;-o-transition:color .2s ease-out;transition:color .2s ease-out}
 .flexnav>li>a{display:block;font-weight:300;text-decoration:none}
 .flexnav li a:hover{color:#fff}
-.flexnav>.item-with-ul>a{padding-right:66px}touch-button{display:block;position:absolute;right:0;top:0;width:54px;height:54px;z-index:99;cursor:pointer;background:0 0}
+.flexnav>.item-with-ul>a{padding-right:66px}
+.touch-button{display:block;position:absolute;right:0;top:0;width:54px;height:54px;z-index:99;cursor:pointer;background:0 0}
 .touch-button::after{content:'';display:block;position:absolute;width:26px;height:26px;border:1px solid #7a8189;right:13px;top:13px;border-radius:23px}
 .touch-button::before{content:'';display:block;width:10px;height:10px;position:absolute;border-bottom:1px solid #7a8189;border-left:1px solid #7a8189;right:21px;top:20px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
 .flexnav li:hover>.touch-button::before,.sm-screen .submenu-open::before{border-bottom-color:#fff;border-left-color:#fff}
@@ -77,7 +78,13 @@ body {
 
 
 .flexnav.show .touch-button,.menu-button .touch-button{border-left:1px solid #31353f;z-index:999}
-.option::before{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);right:16px;top:15px}.menu-button{display:block}.menu-button .touch-button::before{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0);border-left:0;border-top:2px solid #7a8189;border-bottom:2px solid #7a8189;height:2px;width:12px;top:22px}.menu-button::after{display:block;width:12px;height:2px;content:'';position:absolute;background:#7a8189;right:21px;top:30px}.flexnav ul ul li a{padding-left:62px}.flexnav ul ul ul li a{padding-left:82px}}
+.option::before{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);right:16px;top:15px}
+.menu-button{display:block}
+.menu-button 
+.touch-button::before{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0);border-left:0;border-top:2px solid #7a8189;border-bottom:2px solid #7a8189;height:2px;width:12px;top:22px}
+.menu-button::after{display:block;width:12px;height:2px;content:'';position:absolute;background:#7a8189;right:21px;top:30px}
+.flexnav ul ul li a{padding-left:62px}
+.flexnav ul ul ul li a}
 
 
 .panel{
@@ -85,8 +92,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    align-items:  center;
+    margin-top: 0px;
 }
 .question-container{
     margin: 10px;
@@ -182,34 +189,33 @@ body {
   
   #name {
     font-family: "Helvetica", "Arial", sans-serif;
-    display: inline-block;
+
     font-size: 1em;
-    padding: 1em 2em;
-    margin-top: 100px;
-    margin-bottom: 60px;
-    -webkit-appearance: none;
-    appearance: none;
+
+   
+  
+   
+
     background-color: #ff0081;
     color: #fff;
-    border-radius: 4px;
+  
     border: none;
     cursor: pointer;
-    position: relative;
-    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+
+
+    
   }
   #name {
     outline: 0;
   }
   #name {
-    position: absolute;
+    position:unset;
     content: "";
     display: block;
     width: 10%;
-   
-   
-    z-index: -100;
+ 
   }
+  
   
   
 

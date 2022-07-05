@@ -1,113 +1,113 @@
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
+    q: "The code in The Matrix comes from what food recipes?",
+    a: [{ text: "Sushi recipes", isCorrect: true },
+        { text: "Dumpling recipes", isCorrect: false },
+        { text: "Stir-fry recipes", isCorrect: false },
+        { text: "Grandma Agne's recipes", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
+    q: "Where were The Lord of the Rings movies filmed?",
+    a: [{ text: "Ireland", isCorrect: false, },
+        { text: "Iceland", isCorrect: false },
+        { text: "New Zealand", isCorrect: true },
+        { text: "Australia", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "Which country does Forrest Gump travel to as part of the All-American Ping-Pong Team?",
+    a: [{ text: "Vietnam", isCorrect: false, },
+        { text: "China", isCorrect: true },
+        { text: "Sweden", isCorrect: false },
+        { text: "France", isCorrect: false }
     ]
 
 },
 
 {
     id: 3,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "Which actor plays Private Ryan in Saving Private Ryan?",
+    a: [{ text: "Tom Hanks", isCorrect: false, },
+        { text: "Vin Disel", isCorrect: false },
+        { text: "Edward Burns", isCorrect: false },
+        { text: "Matt Damon", isCorrect: true }
     ]
 
 },
 
 {
     id: 4,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "What is the highest-grossing movie of all time?",
+    a: [{ text: "Titanic", isCorrect: false, },
+        { text: "Avatar", isCorrect: true },
+        { text: "Avengers: Endgame", isCorrect: false },
+        { text: "Star Wars: The Force Awakens", isCorrect: false }
     ]
 
 },
 {
     id: 5,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "Which is the first movie in the Bourne franchise?",
+    a: [{ text: "The Bourne Identity", isCorrect: true, },
+        { text: "The Bourne Supremacy ", isCorrect: false },
+        { text: "Jason Bourne", isCorrect: false },
+        { text: "The Bourne Legacy", isCorrect: false }
     ]
 
 },
 {
     id: 6,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
+    q: "Jack and Rose are the main characters from which film?",
+    a: [{ text: "Lost In Translation", isCorrect: false, },
+        { text: "Punch-Drunk Love", isCorrect: false },
+        { text: "The Titanic", isCorrect: true },
+        { text: "The Way We Were", isCorrect: false }
     ]
 
 },
 {
     id: 7,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false }
+    q: "In 'Snow White and the Seven Dwarfs' what did the seven dwarfs do for a job?",
+    a: [{ text: "Teachers", isCorrect: false, },
+        { text: "Miners", isCorrect: true },
+        { text: "Maids", isCorrect: false },
+        { text: "Cooks", isCorrect: false }
     ]
 
 },
 {
     id: 8,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "Which movie did Tom Hanks NOT star in?",
+    a: [{ text: "Apollo 13", isCorrect: false, },
+        { text: "Forest Gump", isCorrect: false },
+        { text: "Groundhog Day", isCorrect: true },
+        { text: "The Green Mile", isCorrect: false }
     ]
 
 },
 {
     id: 9,
-    q: "",
-    a: [{ text: "", isCorrect: false, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isisCorrect: true }
+    q: "What is the film crew's chief electrician called?",
+    a: [{ text: "Big L.", isCorrect: false, },
+        { text: "Gaffer", isCorrect: true },
+        { text: "Sparks", isCorrect: false },
+        { text: "The wire man", isisCorrect: false }
     ]
 
 },
 {
     id: 10,
-    q: "",
-    a: [{ text: "", isCorrect: true, },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+    q: "Which actor plays James Bond in Skyfall and Casino Royale?",
+    a: [{ text: "Daniel Craig", isCorrect: true, },
+        { text: "Pierce Brosnan", isCorrect: false },
+        { text: "Sean Connery", isCorrect: false },
+        { text: "Timothy Dalton", isCorrect: false }
     ]
 
 }
@@ -216,7 +216,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 9) {
+if (id < 10) {
     id++;
     iterate(id);
     console.log(id);
