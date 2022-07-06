@@ -1,31 +1,37 @@
 // Questions will be asked
+    document.getElementById("name").onclick = function(){
+    const name = prompt("Enter your name");
+    document.getElementById("outputName").innerText = name;
+}
+
+
 const Questions = [{
     id: 0,
-    q: "The code in The Matrix comes from what food recipes?",
-    a: [{ text: "Sushi recipes", isCorrect: true },
-        { text: "Dumpling recipes", isCorrect: false },
-        { text: "Stir-fry recipes", isCorrect: false },
-        { text: "Grandma Agne's recipes", isCorrect: false }
+    q: "Co oznacza zielony kod w filmie 'Matrix'?",
+    a: [{ text: "Japoński przepis na Sushi", isCorrect: true },
+        { text: "Przepis na kopytka", isCorrect: false },
+        { text: "Poezja Japońska", isCorrect: false },
+        { text: "Przepis babci Agnieszki", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "Where were The Lord of the Rings movies filmed?",
-    a: [{ text: "Ireland", isCorrect: false, },
-        { text: "Iceland", isCorrect: false },
-        { text: "New Zealand", isCorrect: true },
+    q: "Gdzie były filmowane filmy z seri 'Władca Pierścieni?",
+    a: [{ text: "Irlandia", isCorrect: false, },
+        { text: "Islandia", isCorrect: false },
+        { text: "Nowa Zelandia", isCorrect: true },
         { text: "Australia", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "Which country does Forrest Gump travel to as part of the All-American Ping-Pong Team?",
-    a: [{ text: "Vietnam", isCorrect: false, },
-        { text: "China", isCorrect: true },
-        { text: "Sweden", isCorrect: false },
-        { text: "France", isCorrect: false }
+    q: "Jakie nazwisko nosi bohater filmu'Rocky'?",
+    a: [{ text: "Nolan", isCorrect: false, },
+        { text: "Balboa", isCorrect: true },
+        { text: "Gump", isCorrect: false },
+        { text: "", isCorrect: false }
     ]
 
 },

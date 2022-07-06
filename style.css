@@ -185,12 +185,13 @@ body {
   
   .user {
     color: red;
+    font-size: 20px;
   }
   
   #name {
     font-family: "Helvetica", "Arial", sans-serif;
 
-    font-size: 1em;
+    font-size: 1.1em;
 
    
   
@@ -215,12 +216,16 @@ body {
     width: 10%;
  
   }
-  
-  
-  
 
+   .menu-button {
+    color:            #F8F8F8;
+    background-color: #4f81bd;
+}
 
-  
+#outputName {
+  color: yellowgreen;
+  size: 30px;
+}
  
  
  

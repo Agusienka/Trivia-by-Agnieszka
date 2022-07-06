@@ -1,5 +1,3 @@
-//ask for the name of the player to display
-
 document.getElementById("name").onclick = function(){
     const name = prompt("Enter your name");
     document.getElementById("outputName").innerText = name;
@@ -14,73 +12,73 @@ document.getElementById("name").onclick = function(){
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "What is the normal pH level of the human blood?",
-    a: [{ text: "7.40", isCorrect: true },
-        { text: "6.0", isCorrect: false },
-        { text: "13.5", isCorrect: false },
-        { text: "8.7", isCorrect: false }
+    q: "Co oznacza zielony kod w filmie 'Matrix'?",
+    a: [{ text: "Japoński przepis na Sushi", isCorrect: true },
+        { text: "Przepis na kopytka", isCorrect: false },
+        { text: "Poezja Japońska", isCorrect: false },
+        { text: "Przepis babci Agnieszki na placki ziemniaczane", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "What is the chemical symbol for table salt?",
-    a: [{ text: "S", isCorrect: false, },
-        { text: "NaCl", isCorrect: true },
-        { text: "K", isCorrect: false },
-        { text: "Cl", isCorrect: false }
+    q: "„Żona modna”, utwór krytykujący znamienne dla XVIII w. hołdowanie cudzoziemszczyźnie, jest jedną z najbardziej znanych satyr?",
+    a: [{ text: "Hugona Kołłątaja", isCorrect: false, },
+        { text: "Ignacego Krasickiego", isCorrect: true },
+        { text: "Stanisława Staszica", isCorrect: false },
+        { text: "Juliana Ursyna Niemcewicza", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "Tinnitus problem is related to?",
-    a: [{ text: "Eye", isCorrect: false, },
-        { text: "Nose", isCorrect: false },
-        { text: "Ankle", isCorrect: false },
-        { text: "Ear", isCorrect: true }
+    q: "Który prezydent Stanów Zjednoczonych, jako jedyny do tej pory, ustąpił ze stanowiska przed końcem kadencji??",
+    a: [{ text: "Geral Ford", isCorrect: false, },
+        { text: "Richard Nixon", isCorrect: true },
+        { text: "Jimmy Carter", isCorrect: false },
+        { text: "Ronald Reagan", isCorrect: false }
     ]
 
 },
 
 {
     id: 3,
-    q: "What is the medical term for low blood sugar?",
-    a: [{ text: "Myocarditis", isCorrect: false, },
-        { text: "Syncopy", isCorrect: false },
-        { text: "Hypoglacemia", isCorrect: true },
-        { text: "Tachycardia", isCorrect: false }
+    q: "Dźwięk porusza się z różną prędkością przechodząc przez różne materiały. Przez co przejdzie najszybciej??",
+    a: [{ text: "Stal", isCorrect: true, },
+        { text: "Gumę", isCorrect: false },
+        { text: "Wodę", isCorrect: false },
+        { text: "Powietrze", isCorrect: false }
     ]
 
 },
 
 {
     id: 4,
-    q: "How many men have walked on the moon? ",
-    a: [{ text: "4", isCorrect: false, },
-        { text: "7", isCorrect: false },
-        { text: "12", isCorrect: true },
-        { text: "10", isCorrect: false }
+    q: "Suchoty to dawna nazwa: ? ",
+    a: [{ text: "Dżumy", isCorrect: false, },
+        { text: "Cholery", isCorrect: false },
+        { text: "Ospy", isCorrect: false },
+        { text: "Gruźlicy", isCorrect: true }
     ]
 
 },
 {
     id: 5,
-    q: "As you go down into a well, your weight?",
-    a: [{ text: "Increases slightly", isCorrect: false, },
-        { text: "Decreases slightly", isCorrect: true },
-        { text: "Remains the same", isCorrect: false },
-        { text: "None of the above", isCorrect: false }
+    q: "Jarema Stępowski występował w serialu Wojna domowa, gdzie wcielił się w charakterystyczną postać mężczyzny zbierającego suchy chleb dla?",
+    a: [{ text: "Gołębi", isCorrect: false, },
+        { text: "Koni", isCorrect: true },
+        { text: "Królików", isCorrect: false },
+        { text: "Kozy", isCorrect: false }
     ]
 
 },
 {
     id: 6,
-    q: "Bees must collect nectar from approximately how many flowers to make 1 pound of honeycomb?",
-    a: [{ text: "10 thousand", isCorrect: false, },
-        { text: "20 million", isCorrect: true },
-        { text: "2 million", isCorrect: false },
-        { text: "50 million", isCorrect: false }
+    q: "Pustynia Atacama, należąca do najsuchszych obszarów na świecie, leży w?",
+    a: [{ text: "Chile", isCorrect: true, },
+        { text: "Maroko", isCorrect: false},
+        { text: "Chinach", isCorrect: false },
+        { text: "Stanach Zjednoczonych", isCorrect: false }
     ]
 
 },
@@ -238,6 +236,17 @@ if (id < 10) {
 }
 
 })
+
+/*const score = 0;
+const score = document.getElementById('evaluate').score;
+ function scoreboard() {
+    if (selected == "true") { text: "You earned a Point!",
+    score = score + 1
+    alert("Score: " + score);
+ }
+ else if(selected == false){
+    score = score + 0;
+ } */
 
 // Computes score and returns a paragraph element to be displayed
 

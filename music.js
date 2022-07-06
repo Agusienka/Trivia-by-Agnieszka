@@ -1,3 +1,11 @@
+document.getElementById("name").onclick = function(){
+    const name = prompt("Enter your name");
+    document.getElementById("outputName").innerText = name;
+}
+
+
+
+
 // Questions will be asked
 const Questions = [{
     id: 0,

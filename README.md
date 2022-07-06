@@ -5,9 +5,8 @@
 ###CREDITS
 https://tobiasahlin.com/moving-letters/
 bootstrap
-https://aprilwensel.medium.com/its-time-to-retire-rtfm-31acdfef654f
 animejs
 google
-geeks for geeks
+geeks for geeks jymnjogiya
 gsap(maybe)
 Blubby button Author: Nour Saud;
