@@ -4,11 +4,6 @@ document.getElementById("name").onclick = function(){
 }
 
 
-
-
-
-
-
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -128,6 +123,8 @@ const Questions = [{
 
 // Set start
 var start = true;
+var numberOfTrue = 0;
+var numberOfFalse = 0;
 
 // Iterate
 function iterate(id) {
@@ -211,12 +208,15 @@ evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
         result[0].innerHTML = "Correct!";
         result[0].style.color = "green";
+        numberOfTrue++;
     } else {
         result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
+        numberOfFalse++;
     }
 })
 }
+// end of iterate
 
 if (start) {
 iterate("0");
@@ -228,17 +228,26 @@ const next = document.getElementsByClassName('next')[0];
 var id = 0;
 
 next.addEventListener("click", () => {
-start = false;
-if (id < 10) {
-    id++;
-    iterate(id);
-    console.log(id);
-}
+    start = false;
+    if (id < 10) {
+        id++;
+        iterate(id);
+        console.log(id);
+    }
+
+    if(id == 10 ) {
+        total = numberOfTrue + numberOfFalse;
+        alert(`You scored ${numberOfTrue} out of ${total}`)
+    }
 
 })
 
+  
 /*const score = 0;
 const score = document.getElementById('evaluate').score;
+
+// "You scored" + numberOfTrue out of (numberOfTrue + numberOfFalse)
+
  function scoreboard() {
     if (selected == "true") { text: "You earned a Point!",
     score = score + 1
