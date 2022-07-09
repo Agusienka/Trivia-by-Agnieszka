@@ -205,7 +205,7 @@ op4.addEventListener("click", () => {
 
 
 // Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("option-container");
+const evaluate = document.getElementsByClassName("evaluate");
 
 
 // Evaluate method
@@ -231,7 +231,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 10) {
+if (id < 11) {
     id++;
     iterate(id);
     console.log(id);

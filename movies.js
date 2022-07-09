@@ -197,7 +197,7 @@ op4.addEventListener("click", () => {
 
 
 // Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("option-container");
+const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {

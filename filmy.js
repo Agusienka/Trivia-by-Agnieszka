@@ -12,22 +12,22 @@ const Questions = [{
         { text: "Przepis na kopytka", isCorrect: false },
         { text: "Poezja Japońska", isCorrect: false },
         { text: "Przepis babci Agnieszki na placki ziemniaczane", isCorrect: false }
-    ]
+    ],
 
 },
 {
     id: 1,
-    q: "„Żona modna”, utwór krytykujący znamienne dla XVIII w. hołdowanie cudzoziemszczyźnie, jest jedną z najbardziej znanych satyr?",
-    a: [{ text: "Hugona Kołłątaja", isCorrect: false, },
-        { text: "Ignacego Krasickiego", isCorrect: true },
-        { text: "Stanisława Staszica", isCorrect: false },
-        { text: "Juliana Ursyna Niemcewicza", isCorrect: false }
+    q: "Kto jest reżyserem amerykańskiego thrillera z 1960 roku 'Psychoza', w którym znajduje się słynna scena morderstwa pod prysznicem?",
+    a: [{ text: "Francis Ford Coppola", isCorrect: false, },
+        { text: "Roman Polański", isCorrect: false },
+        { text: "Alfred Hitchcock", isCorrect: true },
+        { text: "Stanley Kubrick", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "Który prezydent Stanów Zjednoczonych, jako jedyny do tej pory, ustąpił ze stanowiska przed końcem kadencji??",
+    q: "",
     a: [{ text: "Geral Ford", isCorrect: false, },
         { text: "Richard Nixon", isCorrect: true },
         { text: "Jimmy Carter", isCorrect: false },
@@ -38,22 +38,22 @@ const Questions = [{
 
 {
     id: 3,
-    q: "Dźwięk porusza się z różną prędkością przechodząc przez różne materiały. Przez co przejdzie najszybciej??",
-    a: [{ text: "Stal", isCorrect: true, },
-        { text: "Gumę", isCorrect: false },
-        { text: "Wodę", isCorrect: false },
-        { text: "Powietrze", isCorrect: false }
+    q: "Jak nazywał się serial, w którym Pamela Anderson grała rolę C.J. Parker?",
+    a: [{ text: "Żar tropików", isCorrect: false, },
+        { text: "Policjanci z Miami", isCorrect: false },
+        { text: "Słoneczny patrol", isCorrect: true },
+        { text: "Przyjaciele", isCorrect: false }
     ]
 
 },
 
 {
     id: 4,
-    q: "Suchoty to dawna nazwa: ? ",
-    a: [{ text: "Dżumy", isCorrect: false, },
-        { text: "Cholery", isCorrect: false },
-        { text: "Ospy", isCorrect: false },
-        { text: "Gruźlicy", isCorrect: true }
+    q: "Jak nazywa się ta aktorka, która w 2001 roku zagrała główną rolę w komedii 'Legalna blondynka'? ",
+    a: [{ text: "Sarah Michelle Gellar", isCorrect: false, },
+        { text: "Jennifer Aniston", isCorrect: false },
+        { text: "Nicole Kidman", isCorrect: false },
+        { text: "Reese Witherspoon", isCorrect: true }
     ]
 
 },
@@ -69,21 +69,21 @@ const Questions = [{
 },
 {
     id: 6,
-    q: "Pustynia Atacama, należąca do najsuchszych obszarów na świecie, leży w?",
-    a: [{ text: "Chile", isCorrect: true, },
-        { text: "Maroko", isCorrect: false},
-        { text: "Chinach", isCorrect: false },
-        { text: "Stanach Zjednoczonych", isCorrect: false }
+    q: "Które zdanie na temat Bridget Jones nie jest prawdziwe?",
+    a: [{ text: "Zawsze ubiera się u Prady.", isCorrect: true, },
+        { text: "Ma słabość do alkoholu i papierosów.", isCorrect: false},
+        { text: "Obsesyjnie zapisuje spożywane kalorie.", isCorrect: false },
+        { text: "Jest 30-kilkulatką poszukującą miłości.", isCorrect: false }
     ]
 
 },
 {
     id: 7,
-    q: "The only species of cat that lives and hunts in groups is?",
-    a: [{ text: "Lion", isCorrect: true, },
-        { text: "Leopard", isCorrect: false },
-        { text: "Jaguar", isCorrect: false },
-        { text: "Cougar", isCorrect: false }
+    q: "W kultowym już filmie 'Nagi instynkt' śmiałą rolę pisarki Catherine Tramell zagrała?",
+    a: [{ text: "Sharon Stone", isCorrect: true, },
+        { text: "Demi Moore", isCorrect: false },
+        { text: "Nicole Kidman", isCorrect: false },
+        { text: "Julia Roberts", isCorrect: false }
     ]
 
 },
@@ -129,97 +129,97 @@ var numberOfFalse = 0;
 // Iterate
 function iterate(id) {
 
-// Getting the result display section
-var result = document.getElementsByClassName("result");
-result[0].innerText = "";
+    // Getting the result display section
+    var result = document.getElementsByClassName("result");
+    result[0].innerText = "";
 
-// Getting the question
-const question = document.getElementById("question");
-
-
-// Setting the question text
-question.innerText = Questions[id].q;
-
-// Getting the options
-const op1 = document.getElementById('op1');
-const op2 = document.getElementById('op2');
-const op3 = document.getElementById('op3');
-const op4 = document.getElementById('op4');
+    // Getting the question
+    const question = document.getElementById("question");
 
 
-// Providing option text
-op1.innerText = Questions[id].a[0].text;
-op2.innerText = Questions[id].a[1].text;
-op3.innerText = Questions[id].a[2].text;
-op4.innerText = Questions[id].a[3].text;
+    // Setting the question text
+    question.innerText = Questions[id].q;
 
-// Providing the true or false value to the options
-op1.value = Questions[id].a[0].isCorrect;
-op2.value = Questions[id].a[1].isCorrect;
-op3.value = Questions[id].a[2].isCorrect;
-op4.value = Questions[id].a[3].isCorrect;
-
-var selected = "";
-
-// Show selection for op1
-op1.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightgoldenrodyellow";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightskyblue";
-    selected = op1.value;
-})
-
-// Show selection for op2
-op2.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightgoldenrodyellow";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightskyblue";
-    selected = op2.value;
-})
-
-// Show selection for op3
-op3.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightgoldenrodyellow";
-    op4.style.backgroundColor = "lightskyblue";
-    selected = op3.value;
-})
-
-// Show selection for op4
-op4.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightgoldenrodyellow";
-    selected = op4.value;
-})
+    // Getting the options
+    const op1 = document.getElementById('op1');
+    const op2 = document.getElementById('op2');
+    const op3 = document.getElementById('op3');
+    const op4 = document.getElementById('op4');
 
 
+    // Providing option text
+    op1.innerText = Questions[id].a[0].text;
+    op2.innerText = Questions[id].a[1].text;
+    op3.innerText = Questions[id].a[2].text;
+    op4.innerText = Questions[id].a[3].text;
 
-// Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("option-container");
+    // Providing the true or false value to the options
+    op1.value = Questions[id].a[0].isCorrect;
+    op2.value = Questions[id].a[1].isCorrect;
+    op3.value = Questions[id].a[2].isCorrect;
+    op4.value = Questions[id].a[3].isCorrect;
+
+    const selected = "";
+
+    // Show selection for op1
+    op1.addEventListener("click", () => {
+        op1.style.backgroundColor = "lightgoldenrodyellow";
+        op2.style.backgroundColor = "lightskyblue";
+        op3.style.backgroundColor = "lightskyblue";
+        op4.style.backgroundColor = "lightskyblue";
+        selected = op1.value;
+    })
+
+    // Show selection for op2
+    op2.addEventListener("click", () => {
+        op1.style.backgroundColor = "lightskyblue";
+        op2.style.backgroundColor = "lightgoldenrodyellow";
+        op3.style.backgroundColor = "lightskyblue";
+        op4.style.backgroundColor = "lightskyblue";
+        selected = op2.value;
+    })
+
+    // Show selection for op3
+    op3.addEventListener("click", () => {
+        op1.style.backgroundColor = "lightskyblue";
+        op2.style.backgroundColor = "lightskyblue";
+        op3.style.backgroundColor = "lightgoldenrodyellow";
+        op4.style.backgroundColor = "lightskyblue";
+        selected = op3.value;
+    })
+
+    // Show selection for op4
+    op4.addEventListener("click", () => {
+        op1.style.backgroundColor = "lightskyblue";
+        op2.style.backgroundColor = "lightskyblue";
+        op3.style.backgroundColor = "lightskyblue";
+        op4.style.backgroundColor = "lightgoldenrodyellow";
+        selected = op4.value;
+    })
 
 
-// Evaluate method
-evaluate[0].addEventListener("click", () => {
-    if (selected == "true") {
-        result[0].innerHTML = "Correct!";
-        result[0].style.color = "green";
-        numberOfTrue++;
-    } else {
-        result[0].innerHTML = "Wrong!";
-        result[0].style.color = "red";
-        numberOfFalse++;
-    }
-})
+
+    // Grabbing the evaluate button
+    const evaluate = document.getElementsByClassName("evaluate");
+
+
+    // Evaluate method
+    evaluate[0].addEventListener("click", () => {
+        if (selected) {
+            result[0].innerHTML = "Correct!";
+            result[0].style.color = "green";
+            numberOfTrue++;
+        } else {
+            result[0].innerHTML = "Wrong!";
+            result[0].style.color = "red";
+            numberOfFalse++;
+        }
+    })
 }
 // end of iterate
 
 if (start) {
-iterate("0");
+    iterate(0);
 }
 
 
@@ -229,19 +229,22 @@ var id = 0;
 
 next.addEventListener("click", () => {
     start = false;
-    if (id < 10) {
+    if (id < 11) {
         id++;
         iterate(id);
         console.log(id);
     }
 
-    if(id == 10 ) {
-        total = numberOfTrue + numberOfFalse;
-        alert(`You scored ${numberOfTrue} out of ${total}`)
+    if (id >= 11) {
+        for (var i = 0; i < Questions.length; i++) {
+          if (i === true) {
+            numberOfTrue++;
+          } 
+        }
+        
+        alert(`You got ${numberOfTrue} questions out of ${Questions.length} right`);
     }
-
 })
-
   
 /*const score = 0;
 const score = document.getElementById('evaluate').score;

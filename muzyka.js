@@ -12,103 +12,103 @@ document.getElementById("name").onclick = function(){
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "Co zostało z psa, który pił lewy alkohol? - Samogon. Ten typ żartu nazywamy często?",
-    a: [{ text: "Biszkoptem", isCorrect: false },
-        { text: "Sucharem", isCorrect: true },
-        { text: "Waflem", isCorrect: false },
-        { text: "Krakersem", isCorrect: false }
+    q: "Prawdziwe nazwisko tej kontrowersyjnej amerykańskiej piosenkarki popowej to Ciccone, a jej pseudonim artystyczny to:?",
+    a: [{ text: "Lady Gaga", isCorrect: true },
+        { text: "Cher", isCorrect: false },
+        { text: "Madonna", isCorrect: false },
+        { text: "Beyoncé", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "„Żona modna”, utwór krytykujący znamienne dla XVIII w. hołdowanie cudzoziemszczyźnie, jest jedną z najbardziej znanych satyr?",
-    a: [{ text: "Hugona Kołłątaja", isCorrect: false, },
-        { text: "Ignacego Krasickiego", isCorrect: true },
-        { text: "Stanisława Staszica", isCorrect: false },
-        { text: "Juliana Ursyna Niemcewicza", isCorrect: false }
+    q: "Jaki jest symbol chemiczny soli?",
+    a: [{ text: "S", isCorrect: false, },
+        { text: "NaCl", isCorrect: true },
+        { text: "K", isCorrect: false },
+        { text: "Cl", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "Który prezydent Stanów Zjednoczonych, jako jedyny do tej pory, ustąpił ze stanowiska przed końcem kadencji??",
-    a: [{ text: "Geral Ford", isCorrect: false, },
-        { text: "Richard Nixon", isCorrect: true },
-        { text: "Jimmy Carter", isCorrect: false },
-        { text: "Ronald Reagan", isCorrect: false }
+    q: "Problemy z czym powodują zawroty głowy?",
+    a: [{ text: "Oczami", isCorrect: false, },
+        { text: "Nosem", isCorrect: false },
+        { text: "Kostką", isCorrect: false },
+        { text: "Uszami", isCorrect: true }
     ]
 
 },
 
 {
     id: 3,
-    q: "Mama powiada: 'Napij się mleka'. A on na drzewo mamie ucieka. Mama powiada :'Chodź do kąpieli','_________________'.Jakiego wersu brakuje w znanym wierszu Juliana Tuwima?",
-    a: [{ text: "A on się tarza w czystej pościeli.", isCorrect: false, },
-        { text: "A on chce czekać aż do niedzieli.", isCorrect: false },
-        { text: "A on się boi, że się wybieli.", isCorrect: true },
-        { text: "A on używa nowych forteli.", isCorrect: false }
+    q: "Dźwięk porusza się z różną prędkością przechodząc przez różne materiały. Przez co przejdzie najszybciej??",
+    a: [{ text: "Stal", isCorrect: true, },
+        { text: "Gumę", isCorrect: false },
+        { text: "Wodę", isCorrect: false },
+        { text: "Powietrze", isCorrect: false }
     ]
 
 },
 
 {
     id: 4,
-    q: "'Rada małpa, że się śmieli, kiedy mogła udać człeka, widząc panią raz w kąpieli, wlazła pod stół - cicho czeka'.Kto jest autorem wiersza 'Małpa w kąpieli'? ",
-    a: [{ text: "Aleksander Fredro", isCorrect: true, },
-        { text: "Julian Tuwim", isCorrect: false },
-        { text: "Adam Mickiewicz", isCorrect: false },
-        { text: "Jan Brzechwa", isCorrect: false }
+    q: "Suchoty to dawna nazwa: ? ",
+    a: [{ text: "Dżumy", isCorrect: false, },
+        { text: "Cholery", isCorrect: false },
+        { text: "Ospy", isCorrect: false },
+        { text: "Gruźlicy", isCorrect: true }
     ]
 
 },
 {
     id: 5,
-    q: "O romans z którym prezydentem USA była podejrzewana Marilyn Monroe?",
-    a: [{ text: "Ronaldem Reaganem", isCorrect: false, },
-        { text: "Lyndonem Johnsonem", isCorrect: false },
-        { text: "Richardem Nixonem", isCorrect: false },
-        { text: "Johnem Fitzeraldem Kennedym", isCorrect: true }
+    q: "  ?",
+    a: [{ text: "", isCorrect: false, },
+        { text: "Koni", isCorrect: true },
+        { text: "Królików", isCorrect: false },
+        { text: "Kozy", isCorrect: false }
     ]
 
 },
 {
     id: 6,
-    q: "Księżna Walii, Diana, zginęła w 1997 roku w wypadku samochodowym w:?",
-    a: [{ text: "Paryżu", isCorrect: true, },
-        { text: "Londynie", isCorrect: false},
-        { text: "Madrycie", isCorrect: false },
-        { text: "Rzymie", isCorrect: false }
+    q: "Pustynia Atacama, należąca do najsuchszych obszarów na świecie, leży w?",
+    a: [{ text: "Chile", isCorrect: true, },
+        { text: "Maroko", isCorrect: false},
+        { text: "Chinach", isCorrect: false },
+        { text: "Stanach Zjednoczonych", isCorrect: false }
     ]
 
 },
 {
     id: 7,
-    q: "Skąd pochodzi modelka, aktorka i projektantka mody, Claudia Schiffer, która zyskała sławę na początku lat 90. jako jedna z najbardziej uznanych modelek na świecie??",
-    a: [{ text: "Z Austrii", isCorrect: false, },
-        { text: "Z Niemiec", isCorrect: true },
-        { text: "Z USA", isCorrect: false },
-        { text: "Z Francji", isCorrect: false }
+    q: "The only species of cat that lives and hunts in groups is?",
+    a: [{ text: "Lion", isCorrect: true, },
+        { text: "Leopard", isCorrect: false },
+        { text: "Jaguar", isCorrect: false },
+        { text: "Cougar", isCorrect: false }
     ]
 
 },
 {
     id: 8,
-    q: "Za niemiecki epos narodowy uznaje się napisaną ok. 1200 roku przez nieznanego autora 'Pieśń o __________'.?",
-    a: [{ text: "Nibelungach", isCorrect: true, },
-        { text: "Hobbitach", isCorrect: false },
-        { text: "Rolandzie", isCorrect: false },
-        { text: "Burgundach", isCorrect: false }
+    q: "Which prefix is often used with scientific terms to indicate that something is the same, equal or constant?",
+    a: [{ text: "Iso", isCorrect: true, },
+        { text: "Mega", isCorrect: false },
+        { text: "Meta", isCorrect: false },
+        { text: "Quasi", isCorrect: false }
     ]
 
 },
 {
     id: 9,
-    q: "Rzeczpospolita Obojga Narodów powstała na mocy unii?",
-    a: [{ text: "Wileńskiej", isCorrect: false, },
-        { text: "Brzeskiej", isCorrect: false },
-        { text: "Krewskiej", isCorrect: false },
-        { text: "Lubelskiej", isCorrect: true }
+    q: "The study of phenomena at very low temperatures is called?",
+    a: [{ text: "Heat transfer", isCorrect: false, },
+        { text: "Morphology", isCorrect: false },
+        { text: "Crystallography", isCorrect: false },
+        { text: "Cryogenics", isCorrect: true }
     ]
 
 },

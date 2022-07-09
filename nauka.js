@@ -64,11 +64,11 @@ const Questions = [{
 },
 {
     id: 5,
-    q: "  ?",
-    a: [{ text: "", isCorrect: false, },
-        { text: "Koni", isCorrect: true },
-        { text: "Królików", isCorrect: false },
-        { text: "Kozy", isCorrect: false }
+    q: "Kto podczas kąpieli dokonał odkrycia, że przedmioty zanurzone w wodzie pozornie tracą na wadze tyle, ile waży wyparta przez nie woda i podekscytowany swoim odkryciem wybiegł na ulicę krzycząc: 'Heureka!'?",
+    a: [{ text: "Archimedes", isCorrect: true, },
+        { text: "Galileusz", isCorrect: false },
+        { text: "Isac Newton", isCorrect: false },
+        { text: "Sokrates", isCorrect: false }
     ]
 
 },
@@ -84,11 +84,11 @@ const Questions = [{
 },
 {
     id: 7,
-    q: "The only species of cat that lives and hunts in groups is?",
-    a: [{ text: "Lion", isCorrect: true, },
-        { text: "Leopard", isCorrect: false },
-        { text: "Jaguar", isCorrect: false },
-        { text: "Cougar", isCorrect: false }
+    q: "Jony naładowane ujemnie to:?",
+    a: [{ text: "Protony", isCorrect: false, },
+        { text: "Aniony", isCorrect: true },
+        { text: "Elektrony", isCorrect: false },
+        { text: "Kationy", isCorrect: false }
     ]
 
 },
@@ -203,7 +203,7 @@ op4.addEventListener("click", () => {
 
 
 // Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("option-container");
+const evaluate = document.getElementsByClassName("evaluate");
 
 
 // Evaluate method
